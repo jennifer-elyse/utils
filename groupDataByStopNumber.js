@@ -65,3 +65,36 @@ function groupDataByStopNumber(keyDataPairs) {
 	stopsArray.sort((a, b) => parseInt(a.stopNbr, 10) - parseInt(b.stopNbr, 10));
 	return stopsArray;
 }
+
+
+
+		// const tempGroupingMap = new Map();
+
+		// for (const associate of results[1]) {
+		// 	if (!tempGroupingMap.has(associate.stopNbr)) {
+		// 		tempGroupingMap.set(associate.stopNbr, {
+		// 			stopNbr: associate.stopNbr,
+		// 			associates: [associate],
+		// 			signatures: []
+		// 		});
+		// 	} else {
+		// 		const reportDetails = tempGroupingMap.get(associate.stopNbr);
+		// 		reportDetails.associates.push(associate);
+		// 	}
+		// }
+
+		// for (const signature of results[2]) {
+		// 	if (!tempGroupingMap.has(signature.stopNbr)) {
+		// 		tempGroupingMap.set(signature.stopNbr, {
+		// 			stopNbr: signature.stopNbr,
+		// 			associates: [],
+		// 			signatures: [signature]
+		// 		});
+		// 	} else {
+		// 		const reportDetails = tempGroupingMap.get(signature.stopNbr);
+		// 		reportDetails.signatures.push(signature);
+		// 	}
+		// }
+
+		// const stopsArray = Array.from(tempGroupingMap.values());
+		// stopsArray.sort((a, b) => parseInt(a.stopNbr, 10) - parseInt(b.stopNbr, 10));
